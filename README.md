@@ -4,7 +4,7 @@
 ```shell
 aws lightsail get-instance-metric-data \
       --instance-name $name \
-      --metric-name NetworkIn --period $groupSizeInSecond \
+      --metric-name NetworkIn/NetworkOut --period $groupSizeInSecond \
       --start-time $startTimestamp --end-time $endTimestamp \
       --unit Bytes --statistics Sum"
 ```
