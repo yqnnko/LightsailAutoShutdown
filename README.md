@@ -1,5 +1,14 @@
 # Amazon Lightsail 流量监控/自动关机脚本
-
+---
+- Lightsail的流量消耗可以由aws cli获得
+```shell
+aws lightsail get-instance-metric-data \
+      --instance-name $name \
+      --metric-name NetworkIn --period $groupSizeInSecond \
+      --start-time $startTimestamp --end-time $endTimestamp \
+      --unit Bytes --statistics Sum"
+```
+---
 - 环境要求python3   ```pip install awscli pytz```
 - 流量监测/自动关机脚本
 ```
