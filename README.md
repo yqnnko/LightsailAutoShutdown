@@ -1,6 +1,6 @@
 # Amazon Lightsail 流量监控/自动关机脚本
 ---
-- Lightsail的流量消耗可以由aws cli获得
+- Lightsail的流量消耗可以由 ```awscli``` 获得
 ```shell
 aws lightsail get-instance-metric-data \
       --instance-name $name \
@@ -26,7 +26,7 @@ optional arguments:
   --traffic TRAFFIC  Debug: Use this traffic setting as the upper limit, in MByte
 ```
 
-- 输出位于```data```目录下```mergeHtml.py```可以将日志合并输出为单一```index.html```
+- 输出位于 ```data``` 目录下 ```mergeHtml.py``` 可以将日志合并输出为单一 ```index.html```
 
 ![image](https://user-images.githubusercontent.com/84311024/141241136-5b6cf63c-1800-4702-900b-64aa78116f79.png)
 
