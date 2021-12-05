@@ -6,7 +6,7 @@ aws lightsail get-instance-metric-data \
       --instance-name $name \
       --metric-name NetworkIn/NetworkOut --period $groupSizeInSecond \
       --start-time $startTimestamp --end-time $endTimestamp \
-      --unit Bytes --statistics Sum"
+      --unit Bytes --statistics Sum
 ```
 ---
 - 环境要求python3   ```pip install awscli pytz```
